@@ -34,6 +34,3 @@ MoveDigit extends AppCompatActivity {
         otherInfoTextView2.setText(otherInfo);
     }
 }
-© 2022 GitHub, Inc.
-        Terms
-        Priv
