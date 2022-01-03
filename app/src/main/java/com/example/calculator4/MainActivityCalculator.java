@@ -85,6 +85,15 @@ public class MainActivityCalculator extends AppCompatActivity {
 
         }
 
+        @Override
+        protected void onStart(){
+            super.onStart();
+            getWindow().getDecorView().setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+            );
+        }
+
         //    implementation of Saved instance state
         @Override
         protected void onSaveInstanceState(@NonNull Bundle outState) {
