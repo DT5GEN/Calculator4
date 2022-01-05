@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="box_size">64dp</dimen>
+    <dimen name="box_size_land">50dp</dimen>
+    <dimen name="border_width">0.5dp</dimen>
+    <dimen name="display_operations_text_size">26sp</dimen>
+    <dimen name="display_operations_horizontal_margin">36dp</dimen>
+    <dimen name="display_text_view_text_size">26sp</dimen>
+    <dimen name="display_text_view_horizontal_margin">30dp</dimen>
+    <dimen name="horizontal_margin_3dp">3dp</dimen>
+    <dimen name="margin_left_button_result">5dp</dimen>
+    <dimen name="padding_left_input_operation">2dp</dimen>
+    <dimen name="padding_right_input_operation">2dp</dimen>
+    <dimen name="margin_horizontal_display_operations_field">30dp</dimen>
+    <dimen name="margin_vertical_display_operations_field">20dp</dimen>
+    <dimen name="app_padding">12dp</dimen>
+</resources>
