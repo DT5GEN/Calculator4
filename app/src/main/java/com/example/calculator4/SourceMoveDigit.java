@@ -13,7 +13,7 @@ public class SourceMoveDigit extends AppCompatActivity {
     private Button parcelableMoveDigitButton;
 
     @Override
-    protected void onCreate( Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator_constraint_layout);
 
@@ -33,8 +33,6 @@ public class SourceMoveDigit extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
 
     }

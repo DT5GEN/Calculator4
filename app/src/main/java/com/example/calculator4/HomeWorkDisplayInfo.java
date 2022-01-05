@@ -8,7 +8,7 @@ public class HomeWorkDisplayInfo implements Parcelable {
     public String displayInfo;
     public String otherInfo;
 
-    public HomeWorkDisplayInfo(String displayInfo, String otherInfo){
+    public HomeWorkDisplayInfo(String displayInfo, String otherInfo) {
         this.displayInfo = displayInfo;
         this.otherInfo = otherInfo;
     }
@@ -41,11 +41,20 @@ public class HomeWorkDisplayInfo implements Parcelable {
             return new HomeWorkDisplayInfo[size];
         }
     };
-    public String getDisplayInfo() { return displayInfo;}
 
-    public void setDisplayInfo(String displayInfo) {this.displayInfo = displayInfo;}
+    public String getDisplayInfo() {
+        return displayInfo;
+    }
 
-    public String getOtherInfo() { return otherInfo;}
+    public void setDisplayInfo(String displayInfo) {
+        this.displayInfo = displayInfo;
+    }
 
-    public void setOtherInfo(String otherInfo) {this.otherInfo = otherInfo;}
+    public String getOtherInfo() {
+        return otherInfo;
+    }
+
+    public void setOtherInfo(String otherInfo) {
+        this.otherInfo = otherInfo;
+    }
 }

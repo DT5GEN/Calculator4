@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <style name="style_buttons_digit">
         <item name="android:state_pressed">true</item>
         <item name="android:layout_width">0dp</item>
@@ -15,10 +14,7 @@
         <item name="android:shadowRadius">5</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">40sp</item>
-
-
     </style>
-
 
     <style name="style_buttons_functions">
         <item name="android:layout_width">0dp</item>
@@ -32,9 +28,7 @@
         <item name="android:shadowRadius">5</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">40sp</item>
-
     </style>
-
 
     <style name="style_button_result">
         <item name="android:layout_width">wrap_content</item>
@@ -49,9 +43,7 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">40sp</item>
         <item name="android:gravity">center</item>
-
     </style>
-
 
     <style name="style_complete_operation_display">
         <item name="android:layout_width">wrap_content</item>
@@ -66,7 +58,6 @@
         <item name="android:textAlignment">viewEnd</item>
         <item name="android:textSize">13sp</item>
         <item name="android:gravity">end</item>
-
     </style>
 
     <style name="style_display_operations_field">
@@ -85,7 +76,6 @@
         <item name="android:maxLength">12</item>
         <item name="android:baselineAligned">false</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
-
     </style>
 
     <style name="style_display">
@@ -99,8 +89,6 @@
         <item name="android:textAlignment">viewEnd</item>
         <item name="android:textSize">26sp</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
-
     </style>
-
 
 </resources>
