@@ -6,35 +6,39 @@
     android:layout_height="match_parent"
 
     android:padding="12dp"
-    tools:context=".MainActivityCalculator">
+    tools:context=".MainActivityCalculator"
+    tools:ignore="MissingDefaultResource">
 
     <ImageView
         android:id="@+id/display_calculator_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="378dp"
+        android:layout_height="221dp"
         android:background="@drawable/display"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteY="-12dp" />
+        tools:layout_editor_absoluteX="12dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/display_text_view"
         style="@style/style_display"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:text="@string/display_text_view_example"
+        app:layout_constraintEnd_toEndOf="@+id/display_calculator_image_view"
         app:layout_constraintBottom_toBottomOf="@id/display_calculator_image_view"
+        app:layout_constraintStart_toStartOf="@+id/display_calculator_image_view"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="42dp" />
 
 
     <LinearLayout
         android:id="@+id/display_operations_field_linear_layout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_horizontal_display_operations_field"
         android:gravity="end"
         android:layout_marginVertical="@dimen/margin_vertical_display_operations_field"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/display_calculator_image_view"
         app:layout_constraintTop_toBottomOf="@id/display_text_view"
         >
 
@@ -65,20 +69,27 @@
 
     </LinearLayout>
 
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toEndOf="@+id/display_calculator_image_view"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
     <TextView
         android:id="@+id/complete_operation_text_view"
         style="@style/style_complete_operation_display"
         android:text="@string/text_test_complete_operations"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/display_calculator_image_view"
         app:layout_constraintTop_toBottomOf="@+id/display_calculator_image_view" />
 
     <Button
         android:id="@+id/parcelable_move_digit_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_move_digit"
-        app:layout_constraintTop_toBottomOf="@+id/complete_operation_text_view"/>
+        app:layout_constraintTop_toBottomOf="@+id/complete_operation_text_view"
+        app:layout_constraintStart_toStartOf="@+id/display_calculator_image_view"
+        app:layout_constraintEnd_toEndOf="@+id/display_calculator_image_view"/>
 
     <TextView
         android:id="@+id/button_percent_text_view"
@@ -88,7 +99,7 @@
         android:onClick="onOperatorClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button_0_text_view"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/display_calculator_image_view"
         tools:ignore="OnClick" />
 
     <TextView
