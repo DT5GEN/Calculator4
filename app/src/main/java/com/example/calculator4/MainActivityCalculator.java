@@ -2,6 +2,7 @@ package com.example.calculator4;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -47,6 +48,10 @@ public class MainActivityCalculator extends AppCompatActivity {
         finalResultTextView = findViewById(R.id.display_text_view);         // final result
         completeOperation = findViewById(R.id.complete_operation_text_view);// string containing the numbers and the operation
         operationString = MainActivityCalculator.operator.NULL.name();
+
+//        тестовый запуск калькулятора через другое приложение
+//        Intent intentCallingCalculator = new Intent("runCalcEugen");
+//        startActivity(intentCallingCalculator);
 
 
         //    Implementation of saved instance state
@@ -185,6 +190,7 @@ public class MainActivityCalculator extends AppCompatActivity {
                     }
                 }
                 break;
+
             default:
                 break;
         }
